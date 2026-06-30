@@ -15,6 +15,22 @@ int main(){
     cin.ignore();
 
     Persona personas[1000];
+
+    for(int i=0; i<n; i++){
+        cout<<"Persona "<<i+1<<endl;
+        cout<<"Nombres: ";
+        getline(cin,personas[i].nombres);
+        cout<<"Dia de nacimiento";
+        cin>>personas[i].dia;
+        cout<<"Mes de nacimiento";
+        cin>> personas[i].mes;
+        cout<<"Anio de nacimiento";
+        cin>> personas[i].anio;
+
+        cin.ignore();
+
+    }
     
+
     
 }
