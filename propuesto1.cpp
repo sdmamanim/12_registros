@@ -20,7 +20,7 @@ int main(){
         cout<<"Trabajador "<<i+1<<endl;
 
         cout<<"Nombres: ";
-        getline(cin.empleados[i].nombres);
+        getline(cin, empleados[i].nombres);
         cout<<"Sexo: ";
         cin>>empleados[i].sexo;
         cout<<"Sueldo: ";
@@ -40,5 +40,16 @@ int main(){
         
     }
 
+    cout<< "EMPLEADO CON MAYOR SUELDO:"<<endl;
+    cout<<"Nombres: "<<empleados[mayor].nombres<<endl;
+    cout<<"Sexo: "<<empleados[mayor].sexo<<endl;
+    cout<<"Sueldo: "<<empleados[mayor].sueldo<<endl;
+
+    cout<<" EMPLEADO CON EL MENOR SUELDO:"<<endl;
+    cout<<"Nombres: "<<empleados[menor].nombres<<endl;
+    cout<<"Sexo: "<<empleados[menor].sexo<<endl;
+    cout<<"Sueldo: "<<empleados[menor].sueldo<<endl;
+
+    return 0;
 }
 
