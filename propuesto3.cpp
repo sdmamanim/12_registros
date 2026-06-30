@@ -20,11 +20,11 @@ int main(){
         cout<<"Persona "<<i+1<<endl;
         cout<<"Nombres: ";
         getline(cin,personas[i].nombres);
-        cout<<"Dia de nacimiento";
+        cout<<"Dia de nacimiento: ";
         cin>>personas[i].dia;
-        cout<<"Mes de nacimiento";
+        cout<<"Mes de nacimiento: ";
         cin>> personas[i].mes;
-        cout<<"Anio de nacimiento";
+        cout<<"Anio de nacimiento: ";
         cin>> personas[i].anio;
 
         cin.ignore();
@@ -41,9 +41,20 @@ int main(){
         cout<<" Cumpleaneros del mes "<<mesbuscado<<endl;
         int encontrados = 0;
 
-    }
+        for(int i=0; i<n; i++){
+            if(personas[i].mes == mesbuscado){
+                cout<<"- "<<personas[i].nombres<<endl;
+                encontrados++;
+            }
+        }
 
+        if(encontrados == 0){
+            cout<<" Nadie cumple anos en este mes"<<endl;
+        }
 
+    } while ( mesbuscado != 0);
 
-    
+    cout<<" Programa terminado"<<endl;
+    return 0;
+
 }
