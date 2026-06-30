@@ -12,7 +12,7 @@ int main(){
     int n;
     cout<<"Ingrese la cantidad de personas: ";
     cin>>n;
-    cin.ignore;
+    cin.ignore();
 
     Persona personas[1000];
 
@@ -37,7 +37,18 @@ int main(){
         }
     }
 
+    double promedio = suma / n;
 
+    cout<<"Cantidad de personas mayores de 50 anios: "<<mayores<<endl;
+    cout<<"El promedio de edades de las personas registradas: "<<promedio<<endl;
+
+    cout<<"PERSONAS REGISTRADAS"<<endl;
+    for(int i=0; i<n; i++){
+        cout<<i+1<<"."<<personas[i].nombres<<endl;
+        cout<<"DNI: "<<personas[i].DNI<<endl;
+        cout<<"Edad: "<<personas[i].edad<<endl;
+    }
+    return 0;
 
 
 }
