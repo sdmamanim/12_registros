@@ -28,9 +28,22 @@ int main(){
         cin>> personas[i].anio;
 
         cin.ignore();
-
     }
     
+    int mesbuscado;
+
+    do{
+        cout<<"Ingrese mes a buscar (1-12) o [0] para saltar: ";
+        cin>>mesbuscado;
+        if(mesbuscado==0){
+            break;
+        }
+        cout<<" Cumpleaneros del mes "<<mesbuscado<<endl;
+        int encontrados = 0;
+
+    }
+
+
 
     
 }
