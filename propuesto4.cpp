@@ -7,7 +7,7 @@ struct Atleta{
     string pais;
     string disciplina;
     int medallas;
-}
+};
 
 int main(){
     int n;
@@ -53,4 +53,16 @@ int main(){
 
         }
     }
+
+    if( contadorpais > 0){
+        cout<< "ATLETA DEL PAIS CON MAS MEDALLAS:"<<endl;
+        cout<<"Nombre: "<<atletas[mayor].nombres<<endl;
+        cout<<"Disciplina: "<<atletas[mayor].disciplina<<endl;
+        cout<<"Total de medallas: "<<atletas[mayor].medallas<<endl;
+    }else{
+        cout<<" no se registraron atletas para el pais: "<<buscado<<endl;
+
+    }
+
+    return 0;
 }
