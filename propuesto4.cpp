@@ -30,5 +30,27 @@ int main(){
 
         cin.ignore();
     }
-    
+
+    string buscado;
+    cout<< " Ingrese el pais que desea buscar: "<<endl;
+    getline(cin,buscado);
+
+    cout<<" ATLETAS REGISTRADOS DE "<< buscado <<endl;
+
+    int mayor = 0;
+    int contadorpais = 0;
+
+    for( int i=0; i<n; i++){
+        if( atletas[i].pais == buscado ){
+            cout<<"-"<<atletas[i].nombres<<endl;
+            cout<<"Disciplina: "<<atletas[i].disciplina<<endl;
+            cout<<"Medallas: "<<atletas[i].medallas<<endl;
+            contadorpais++;
+
+            if( atletas[i].medallas > atletas[mayor].medallas){
+                mayor = i;
+            }
+
+        }
+    }
 }
